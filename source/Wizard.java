@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Wizard extends Combatant {
-    private static final int WIZARD_HP = 200;
+    private static final int WIZARD_HP  = 200;
     private static final int WIZARD_ATK = 50;
     private static final int WIZARD_DEF = 10;
     private static final int WIZARD_SPD = 20;
@@ -12,6 +12,7 @@ public class Wizard extends Combatant {
 
     @Override
     public Action getAction(List<Combatant> availableTargets) {
+        // player actions are chosen in GameManager.processPlayerTurn() via CLIHandler
         return null;
     }
 }
